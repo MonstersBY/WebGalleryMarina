@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    background: #e9c6a8;
+}
+p {
+    margin: 0;
+}
+header > .container, section > .container, footer > .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Great Vibes', cursive;
+    font-size: 5vw;
+}
+section .container {
+    font-family: 'Merriweather', serif;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cards .card {
+    width: 22%;
+    margin: 1.5%;
+}
+.cards .card .card-img img {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    header > .container, section > .container, footer > .container {
+        width: 940px;
+    }
+}
+@media (max-width: 999px) {
+    header > .container, section > .container, footer > .container {
+        width: 600px;
+    }
+}
+@media (max-width: 639px) {
+    header > .container, section > .container, footer > .container {
+        width: 300px;
+    }
+}
