@@ -44,11 +44,47 @@ section .container {
 .cards .card:nth-child(2n) {
     background-color: #CC9966;
 }
-.cards .card .card-img img {
+.card .card-img img {
     width: 100%;
 }
-.cards .card .card-info {
+.card .card-info {
     text-align: center;
+}
+.style-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+.style {
+    display: flex;
+    width: 98%;
+    margin: auto;
+}
+.style-container {
+    width: 25%;
+}
+.style-container:nth-child(2n) {
+    background-color: #CC9966;
+}
+.style-container .card {
+    padding: 15px 0;
+    margin: auto;
+    width: 88%;
+}
+
+footer .container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+}
+.contact a:hover{
+    text-decoration: underline;
 }
 
 @media (max-width: 1440px) {
@@ -60,9 +96,30 @@ section .container {
     header > .container, section > .container, footer > .container {
         width: 600px;
     }
+    .welcome {
+        font-size: 1.8vw;
+    }
 }
 @media (max-width: 639px) {
+    header .container {
+        font-size: 22px;
+    }
     header > .container, section > .container, footer > .container {
         width: 300px;
+    }
+    section .container {
+        padding-top: 10px;
+    }
+    .welcome {
+        font-size: 8px;
+    }
+    .cards {
+        padding-top: 10px;
+    }
+    .card .card-info {
+        font-size: 8px;
+    }
+    footer {
+        font-size: 8px;
     }
 }
