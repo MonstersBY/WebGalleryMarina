@@ -19,19 +19,36 @@ header .container {
     font-size: 5vw;
 }
 section .container {
+    padding-top: 20px;
     font-family: 'Merriweather', serif;
+    background: #DBBB9B;
+}
+.welcome {
+    width: max-content;
+    margin: auto;
+    font-size: 1.5vw;
+    font-weight: 400;
 }
 .cards {
+    padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    width: 98%;
+    margin: auto;
+    /* align-items: center; */
 }
 .cards .card {
     width: 22%;
-    margin: 1.5%;
+    padding: 1.5%;
+}
+.cards .card:nth-child(2n) {
+    background-color: #CC9966;
 }
 .cards .card .card-img img {
     width: 100%;
+}
+.cards .card .card-info {
+    text-align: center;
 }
 
 @media (max-width: 1440px) {
