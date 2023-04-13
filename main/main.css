@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-style: normal;
+    background: #e9c6a8;
+}
+p {
+    margin: 0;
+}
+header > .container, section > .container, footer > .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1160px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Great Vibes', cursive;
+    font-size: 4vw;
+}
+header a {
+    color: black;
+    text-decoration: none;
+}
+header a:hover {
+    color: #824305;
+    text-decoration: none;
+}
+section .container {
+    padding-top: 20px;
+    font-family: 'Merriweather', serif;
+    background: #DBBB9B;
+}
+.welcome {
+    width: max-content;
+    margin: auto;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.cards {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: auto;
+    /* align-items: center; */
+}
+.cards .card {
+    width: 22%;
+    padding: 1.5%;
+}
+.cards .card:nth-child(2n) {
+    background-color: #CC9966;
+}
+.card .card-img img {
+    width: 100%;
+}
+.card .card-info {
+    text-align: center;
+}
+.style-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+.style {
+    display: flex;
+    width: 98%;
+    margin: auto;
+}
+.style-container {
+    width: 25%;
+}
+.style-container:nth-child(2n) {
+    background-color: #CC9966;
+}
+.style-container .card {
+    padding: 15px 0;
+    margin: auto;
+    width: 88%;
+}
+
+footer .container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.contact a {
+    color: black;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1440px) {
+    header > .container, section > .container, footer > .container {
+        width: 940px;
+    }
+}
+@media (max-width: 999px) {
+    header > .container, section > .container, footer > .container {
+        width: 600px;
+    }
+    .welcome {
+        font-size: 1.8vw;
+    }
+}
+@media (max-width: 639px) {
+    header .container {
+        font-size: 22px;
+    }
+    header > .container, section > .container, footer > .container {
+        width: 300px;
+    }
+    section .container {
+        padding-top: 10px;
+    }
+    .welcome {
+        font-size: 8px;
+    }
+    .cards {
+        padding-top: 10px;
+    }
+    .card .card-info {
+        font-size: 8px;
+    }
+    footer {
+        font-size: 8px;
+    }
+}
