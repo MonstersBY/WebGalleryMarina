@@ -10,7 +10,7 @@ for (let i = 0; i < data.length; i++) {
         let card = document.createElement('div')
         card.className = 'card'
         card.innerHTML = `
-            <div class="card-img"><img src="../assets/img/img${i+1}.jpg" alt="art"></div>
+            <div class="card-img"><img src="${data[i].img}" alt="art"></div>
             <div class="card-info">
                 ${data[i].name} <br> ${data[i].info}
             </div>
